@@ -102,7 +102,7 @@ int main(int argc, char *argv[]) {
             case -1:
                 perror("select()");
                 break;
-            case 1:
+            case 1: ;
                 int rd_cmd =read(fd_cmd, command_c, SIZE);
                 if (rd_cmd == 0){
                     perror("Cannot read fifo.");
